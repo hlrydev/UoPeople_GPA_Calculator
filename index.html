@@ -184,13 +184,14 @@
         // Display the results
         if (requiredGpaPointsFromNewCourses <= 0) {
             document.getElementById('result').innerText = "Your current GPA is already higher than your goal! (Or please make sure you filled out the GPA Goal field. :D)";
-        } else {
+        } else if(minimumGpaRequired > 4) {
+            document.getElementById('result').innerHTML = "You cannot do this in one term. Please make sure you are setting realistic goals.";
+        } else{
             document.getElementById('result').innerHTML = `
                 You need to achieve a GPA of <strong>${minimumGpaRequired.toFixed(2)}</strong> or <strong>${getGradeFromGpa(minimumGpaRequired)}</strong> in your next courses to reach your goal.<br>
             `;
         }
     }
-
 
     </script>
 </body>
