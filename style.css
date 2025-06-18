@@ -1,0 +1,49 @@
+h1 {
+  color: #9e4caf;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h3 {
+  color: #4c7daf;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: rgb(131, 22, 131);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #9e4caf;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.calculate-btn:hover {
+  background-color: #aa8aaf;
+}
+
+.result,
+.completedGPAPoints {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: #a80049;
+}
